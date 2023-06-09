@@ -11,6 +11,7 @@ import Users from './components/Users';
 import UserDetails from './components/UserDetails';
 import Profile from './components/Profile';
 import { AuthProvider } from './components/auth';
+import { Login } from './components/login';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path=':userId' element={<UserDetails/>}/>
         </Route>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path='login' element={<Login/>}/>
       </Routes>
       </AuthProvider>
   );
